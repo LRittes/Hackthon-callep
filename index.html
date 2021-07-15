@@ -29,11 +29,34 @@
             background-color: #fff;
             color: black;
         }
+        
+        .box-about {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box-about p {
+            width: 60%;
+        }
+
+        .box-fo {
+            width: 60%;
+        }
+
+        .box-date {
+            width: 60%;
+        }
+        .img-ho:hover{
+            opacity: .8;
+        }
     </style>
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-light bg-dark p-0">
+        <nav class="navbar fixed-top navbar-light bg-dark p-0">
             <div class="container-fluid px-0">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
@@ -66,6 +89,140 @@
             </div>
           </nav>
     </header>
+    <div class="container-crc">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/band13.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>New York</h5>
+                  <p>Thank you, NY - A night we won't forget.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/band2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Dallas</h5>
+                  <p>Thank you, Dallas - A night we won't forget.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/band3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Chicago</h5>
+                  <p>Thank you, Chicago - A night we won't forget.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <section class="my-5 p-3">
+        <h2 class="text-center py-2">THE BAND</h2>
+        <h6 class="text-center text-dark fst-italic py-2">We love music</h6>
+        <div class="box-about py-2">
+            <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="box-fo mx-auto">
+            <div class="row">
+                <div class="col-4">
+                    <div >
+                        <p>Foto 1</p>
+                        <img src="assets/foto1.jpg" alt="" class="img-fluid" >
+                    </div>
+                </div>
+            
+                <div class="col-4">
+                        <div>
+                            <p>Foto 2</p>
+                            <img src="assets/foto2.jpg" alt="" class="img-fluid" >
+                        </div>
+                </div>
+                
+                
+                <div class="col-4">
+                        <div >
+                            <p>Foto 3</p>
+                            <img src="assets/foto3.jpg" alt="" class="img-fluid" >
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tour-date my-5 p-5 bg-dark">
+        <div class="box-date m-auto">
+            <h2 class="text-center py-2 text-white">TOUR DATES</h2>
+            <h6 class="text-center text-white fst-italic py-2">Remember to book your tickets!</h6>
+            <div class="list-sold">
+                <ul class="list-group">
+                    <li class="list-group-item mt-2">September <span class="bg-danger text-white px-1">SOLD OUT</span> </li>
+                    <li class="list-group-item mt-2">October <span class="bg-danger text-white px-1">SOLD OUT</span></li>
+                    <li class="list-group-item mt-2">November </li>
+                  </ul>
+            </div>
+        </div>
+        <div class="container my-3 p-3" style="width: 60%;">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card" style="width: 14rem;">
+                    <img src="assets/paris2.jpg" class="card-img-top img-ho" style="width: 100%; height: 148px;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Paris</h5>
+                        <p class="fts-italic">Wen 13 Aug 2016</p>
+                        <p class="card-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <a href="#" class="btn btn-primary">Buy Ticket</a>
+                    </div>
+                    </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card" style="width: 14rem;">
+                    <img src="assets/calif.jpg" class="card-img-top img-ho" style="width: 100%; height: 148px;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">California</h5>
+                        <p class="fts-italic">Fri 27 nov 2016</p>
+                        <p class="card-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <a href="#" class="btn btn-primary">Buy Ticket</a>
+                    </div>
+                    </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card" style="width: 14rem;">
+                    <img src="assets/flo.jpg" class="card-img-top img-ho" style="width: 100%;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Florida</h5>
+                        <p class="fts-italic">Mon 9 jan 2017</p>
+                        <p class="card-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <a href="#" class="btn btn-primary">Buy Ticket</a>
+                    </div>
+                    </div>
+              </div>              
+            </div>
+          </div>
+    </section>
+    <section>
+        <div class="contact">
+            <h2 class="text-center py-2">CONTACT</h2>
+            <h6 class="text-center fst-italic py-2">Fan? Drop a note!</h6>
+        </div>
+        <div class="box-co mx-auto" style="width: 70%;">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="loc">
+                        Chicago, US
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    Column
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
   </body>
