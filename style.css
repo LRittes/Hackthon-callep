@@ -37,6 +37,11 @@
 .box-date {
     width: 60%;
 }
+
+.img-ho {
+    object-fit: cover;
+}
+
 .img-ho:hover{
     opacity: .8;
 }
